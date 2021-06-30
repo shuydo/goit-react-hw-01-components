@@ -1,28 +1,28 @@
 // import React from 'react';
-import user from './user.json';
+// import user from '../user.json';
 
-const Profile = () => {
+const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={user.avatar} alt="Аватар пользователя" class="avatar" />
-        <p class="name">{user.name}</p>
-        <p class="tag">@{user.tag}</p>
-        <p class="location">{user.location}</p>
+    <div className="profile">
+      <div className="description">
+        <img src={avatar} alt="Аватар пользователя" className="avatar" />
+        <p className="name">{name}</p>
+        <p className="tag">@{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className="stats">
         <li>
-          <span class="label">Followers</span>
-          <span class="quantity"> {user.stats.followers}</span>
+          <span className="label">Followers</span>
+          <span className="quantity"> {stats.followers}</span>
         </li>
         <li>
-          <span class="label">Views</span>
-          <span class="quantity"> {user.stats.views}</span>
+          <span className="label">Views</span>
+          <span className="quantity"> {stats.views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity"> {user.stats.likes}</span>
+          <span className="label">Likes</span>
+          <span className="quantity"> {stats.likes}</span>
         </li>
       </ul>
     </div>
