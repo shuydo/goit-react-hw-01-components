@@ -4,6 +4,10 @@
 отображать информацию о пользователе социальной сети. Данные о пользователе
 лежат в файле user.json.
 
+{ "name": "Jacques Gluke", "tag": "jgluke", "location": "Ocho Rios, Jamaica",
+"avatar": "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
+"stats": { "followers": 5603, "views": 4827, "likes": 1308 } }
+
 Превью компонента Profile Описание компонента
 
 Компонент должен принимать несколько пропсов с информацией о пользователе:
